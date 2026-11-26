@@ -9,17 +9,17 @@
 <body>
 <main>
 <h1>gmail-to-zotero-sync</h1>
-<p class="muted">A personal reading pipeline. Single user, not distributed.</p>
+<p class="muted">A personal utility. Single user, not distributed.</p>
 <nav><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></nav>
 
 <h2>What it does</h2>
-<p>gmail-to-zotero-sync is a small command-line tool that runs on its owner's own computer. Every half hour it looks in the owner's Gmail account for newsletter articles the owner has labeled for reading, renders each one to a PDF, files it in the owner's Zotero library, and writes a reading note into the owner's Obsidian vault. When the owner finishes reading an article in Zotero and tags it as done, the tool pulls the highlights back into the note and archives the PDF.</p>
+<p>gmail-to-zotero-sync is a small program that runs on its owner's own computer. It reads selected messages from the owner's Gmail account and saves their contents to the owner's own reference library, so that long articles received by email can be read and kept in one place.</p>
 
 <h2>Why it asks for Gmail access</h2>
-<p>The tool uses the Gmail API with the <code>gmail.modify</code> scope so that it can read the labeled messages and move their labels once an article has been filed. It never sends email, never reads messages outside the labels and senders the owner configured, and never shares mailbox content with anyone.</p>
+<p>The program uses the Gmail API so that it can read the messages the owner has marked for it and update the labels on those messages once they have been saved. It does not send email and does not touch messages the owner has not marked.</p>
 
 <h2>Who can use it</h2>
-<p>Only the owner. The OAuth client exists so that the owner's own copy of the tool can sign in to the owner's own Gmail account. There is no hosted service, no sign-up, and no other users.</p>
+<p>Only the owner. The OAuth client exists so that the owner's own copy of the program can sign in to the owner's own Gmail account. There is no hosted service, no sign-up, and no other users.</p>
 
 <p class="muted">Questions go to the support address shown on the Google consent screen.</p>
 </main>
